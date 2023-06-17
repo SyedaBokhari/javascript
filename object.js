@@ -23,3 +23,32 @@ let user = {
 }
 console.log(user);
 console.log(typeof user);
+
+console.log(user.name);
+console.log(user['orders'][0]);
+console.log(user['orders'][0]['amount']);
+
+const product = {
+    pid: 101,
+    name: 'Alphabounce',
+    brand: 'Adidas',
+    price: 5000,
+    inventory: [ 
+        {
+           size: 7,
+           units: 9
+        },
+        {
+           size: 8,
+           units: 3
+        },
+        {
+           size: 9,
+           units: 0
+        }                    
+     ]
+}
+console.log(product);
+
+product.inventory[0].units=7;
+console.log(product);
